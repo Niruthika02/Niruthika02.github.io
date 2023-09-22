@@ -53,10 +53,6 @@ html, body {
     flex-flow: row wrap;
   }
   
-  body > * {
-    background-color: red;
-    padding: 1%;
-  }
   
   main, header, nav, article, aside, footer, section {
     background-color: rgba(86, 232, 86, 0.885);
