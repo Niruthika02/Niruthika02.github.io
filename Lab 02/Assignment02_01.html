@@ -1,141 +1,167 @@
-<!DOCTYPE html>
+<!--
+	Name: Niruthika Sivaruban
+	File: Assignment02_01.html
+	Date: 02 October 2023
+	This HTML code creates a splash page for Mozilla, featuring a header, introductory content with a video, links to Mozilla's resources, 
+    and a red panda image. The page emphasizes Mozilla's mission of keeping the internet open and accessible.
+	-->
+
+    <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Mozilla splash page</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <style>
-      /* header and body setup */
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mozilla splash page</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <style>
+    /* The header and body setup is made here */
 
-      html {
-        font-family: 'Open Sans', sans-serif;
-        background: url(pattern.png);
-      }
+    html {
+      font-family: 'Open Sans', sans-serif;
+      background: url(pattern.png);
+    }
 
-      body {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        background-color: white;
-        position: relative;
-      }
+    body {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: white;
+      position: relative;
+    }
 
-      /* Header styling */
+    /* The styling for the Header is made here */
 
-      header {
-        height: 150px;
-      }
+    header {
+      height: 150px;
+    }
 
-      header img {
-        width: 100px;
-        position: absolute;
-        right: 32.5px;
-        top: 32.5px;
-      }
+    header img {
+      width: 100px;
+      position: absolute;
+      right: 32.5px;
+      top: 32.5px;
+    }
 
-      h1 {
-        font-size: 50px;
-        line-height: 140px;
-        margin: 0 0 0 32.5px;
-      }
+    h1 {
+      font-size: 50px;
+      line-height: 140px;
+      margin: 0 0 0 32.5px;
+    }
 
-      /* main section and video styling */
+    /* Styling for main section and video */
 
-      main {
-        background: #ccc;
-      }
+    main {
+      background: #ccc;
+    }
 
-      article {
-        padding: 20px;
-      }
+    article {
+      padding: 20px;
+    }
 
-      h2 {
-        margin-top: 0;
-      }
+    h2 {
+      margin-top: 0;
+    }
 
-      p {
-        line-height: 2;
-      }
+    p {
+      line-height: 2;
+    }
 
-      iframe {
-        float: left;
-        margin: 0 20px 20px 0;
-        max-width: 100%;
-      }
+    iframe {
+      float: left;
+      margin: 0 20px 20px 0;
+      max-width: 100%;
+    }
 
-      /* further info links */
+    /* Further info links are provided here */
 
-      .further-info {
-        clear: left;
-        padding: 40px 0;
-        background: #c13832;
-        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
-                    inset 0 -3px 2px rgba(0,0,0,0.5);
-      }
+    .further-info {
+      clear: left;
+      padding: 40px 0;
+      background: #c13832;
+      box-shadow: inset 0 3px 2px rgba(0, 0, 0, 0.5),
+                  inset 0 -3px 2px rgba(0, 0, 0, 0.5);
+    }
 
-      .further-info a {
-        width: 25%;
-        display: block;
-        float: left;
-      }
+    .further-info a {
+      width: 25%;
+      display: block;
+      float: left;
+    }
 
-      .further-info img {
-        max-width: 100%;
-      }
+    .further-info img {
+      max-width: 100%;
+    }
 
-      .clearfix {
-        clear: both;
-      }
+    .clearfix {
+      clear: both;
+    }
 
-      /* Red panda image */
+    /* Red panda image is displayed here */
 
-      .red-panda img {
-        display: block;
-        max-width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Mozilla</h1>
-      <!-- insert <img> element, link to the small
-          version of the Firefox logo -->
+    .red-panda img {
+      display: block;
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section is created here -->
+  <header>
+    <h1>Mozilla</h1>
+    <img src="firefox1.png" alt="Mozilla Firefox Logo">
+  </header>
 
-    </header>
+  <!-- Main Content Section is created here -->
+  <main>
+    <article>
+      <iframe width="400" height="225" src="https://www.youtube.com/embed/ojcNcvb1olg" frameborder="0" allowfullscreen></iframe>
+      <h2>Rocking the free web</h2>
 
-    <main>
-      <article>
-        <!-- insert iframe from youtube -->
+      <p>
+        Mozilla is a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.
+      </p>
 
-        <h2>Rocking the free web</h2>
+      <p>
+        Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">Red panda picture</a> by Mathias Appel.
+      </p>
+    </article>
 
-        <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+    <!-- Further Information Links are provided here -->
+    <div class="further-info">
+      <a href="https://www.mozilla.org/en-US/firefox/new/">
+        <img srcset="firefox1.png,
+                     firefox2.png"
+             sizes="(max-width: 500px) 120px,
+                    400px"
+             src="firefox.png" alt="Download Firefox">
+      </a>
+      <a href="https://www.mozilla.org/">
+        <img srcset="mozilla-dinosaur2.png,
+                     mozilla-dinosaur1.png"
+             sizes="(max-width: 500px) 120px,
+                    400px"
+             src="dinosaur.png" alt="Mozilla Website">
+      </a>
+      <a href="https://addons.mozilla.org/">
+        <img srcset="firefox10.jpg,
+                     firefox20.jpg"
+             sizes="(max-width: 500px) 120px,
+                    400px"
+             src="firefox-addons400.jpg" alt="Customize Firefox with add-ons">
+      </a>
+      <a href="https://developer.mozilla.org/en-US/">
+        <img  src="pic4.svg" role="img" alt="Learn web development with MDN">
+      </a>
+      <div class="clearfix"></div>
+    </div>
 
-        <p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">Red panda picture</a> by Mathias Appel.</p>
-      </article>
-
-      <div class="further-info">
-        <!-- insert images with srcsets and sizes -->
-        <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
-        </a>
-        <a href="https://www.mozilla.org/">
-          <img>
-        </a>
-        <a href="https://addons.mozilla.org/">
-          <img>
-        </a>
-        <a href="https://developer.mozilla.org/en-US/">
-          <img>
-        </a>
-        <div class="clearfix"></div>
-      </div>
-
-      <div class="red-panda">
-        <!-- insert picture element -->
-      </div>
-
-    </main>
-  </body>
+    <!-- Red Panda Image is given here -->
+    <div class="red-panda">
+      <picture>
+        <source media="(max-width: 600px)" srcset="redpanda01.jpg">
+        <img src="redpanda01.jpg" alt="A red panda">
+      </picture>
+    </div>
+  </main>
+</body>
 </html>
