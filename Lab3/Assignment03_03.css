@@ -42,6 +42,7 @@ header, footer {
   border-bottom: 5px solid #a66;
 }
 
+/* WRITE YOUR CODE BELOW HERE */
 
 /* font imports */
 
@@ -73,6 +74,7 @@ See https://www.fontsquirrel.com/fonts/josefin-slab
 /* typography stuff */
 
 html {
+  font-family: 'font2';
   font-size: 10px;
 }
 
