@@ -1,3 +1,11 @@
+<!--
+	Name: Niruthika.Sivaruban
+	File: Assignment03_01.html
+	Date: 18 October 2023
+	This HTML code defines a webpage for a person named "Niruthika Sivaruban" with a biography, job title, and contact information. 
+  It includes styling using CSS for various elements like headings, links, and lists.
+	-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +24,7 @@
 
       h1 {
         color: hotpink;
-        font-size: 4em;
+        font-size: 3em;
         font-family: Georgia, 'Times New Roman', Times, serif;
         border-bottom: 10px dotted purple;
       }
@@ -26,15 +34,21 @@
         font-style: italic;
       }
 
+      p {
+        font-size: 2em; /* Increase the font size for paragraphs to 1.5em */
+      }
+
       ul {
         background-color: #eeeeee;
-        border: 5px solid purple;
+        border: 10px solid purple;
         padding: 50px;
+        font-size: 2em; /* Increase the font size for text inside the "Contact information" box to 1.5em */
       }
 
       .job-title {
         color: #999999;
         font-weight: bold;
+        font-size: 2em; /* Increase the font size for the job title to 2em */
       }
 
       a:link,
@@ -45,6 +59,16 @@
       a:hover {
         text-decoration: none;
         color: green;
+      }
+
+      ul a[href^="mailto:"]:link,
+      ul a[href^="mailto:"]:visited {
+       color: green; /* Set the color for email links to green */
+      }
+
+      ul a[href^="http"]:link,
+      ul a[href^="http"]:visited {
+       color: red; /* Set the color for web links to red */
       }
     </style>
   </head>
