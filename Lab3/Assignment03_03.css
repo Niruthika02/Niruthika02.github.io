@@ -1,38 +1,42 @@
-* General setup */
-
+/* Set the box-sizing property to border-box to include padding and border in the element's total width. */
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0 auto;
-  min-width: 1000px;
-  max-width: 1400px;
+  margin: 0 auto; /* Center-align the body content horizontally. */
+  min-width: 1000px; /* Specify the minimum width of the body to ensure a minimum layout width. */
+  max-width: 1400px; /* Specify the maximum width of the body to limit layout width. */
 }
 
-/* Layout */
+/* Layout styles for different sections of the web page. */
+
 
 section {
-  float: left;
-  width: 50%;
+  float: left; /* Float the section element to the left to create a side-by-side layout. */
+  width: 50%; /* Set the width of the section to take up 50% of the container's width. */
 }
 
 aside {
-  float: left;
-  width: 30%;
+  float: left; /* Float the aside element to the left for a side-by-side layout. */
+  width: 30%; /* Set the width of the aside to take up 30% of the container's width. */
+
 }
 
 nav {
-  float: left;
-  width: 20%;
+  float: left;/* Float the nav element to the left for a side-by-side layout. */
+  width: 20%;   /* Set the width of the nav to take up 20% of the container's width. */
 }
+
+/* Clear the floating elements (sections, asides, nav) to prevent overlapping with the footer. */
 
 footer {
-  clear: both;
+  clear: both; /* Clear both the left and right floating elements to ensure proper footer placement. */
 }
+/* Apply consistent padding to header, section, aside, nav, and footer elements. */
 
 header, section, aside, nav, footer {
-  padding: 20px;
+  padding: 20px; /* Apply a 20px padding to these elements for spacing and layout consistency. */
 }
 
 /* header and footer */
@@ -42,60 +46,54 @@ header, footer {
   border-bottom: 5px solid #a66;
 }
 
-/* WRITE YOUR CODE BELOW HERE */
-
 /* font imports */
 
-/*
-
-Lovato light font obtained from fontspring.com,
-originally created by Philatype
-See https://www.fontspring.com/fonts/philatype/lovato
-
-Josefin slab bold obtained from fontsquirrel.com,
-originally created by Typemade
-See https://www.fontsquirrel.com/fonts/josefin-slab
-
-*/
+/* Define a custom font using the @font-face rule. */
 
 @font-face {
-  font-family: 'font2';
-  src: url('font/font2.ttf') format('Truetype'),
+  font-family: 'font2'; /* Set the font family name for font2. */
+  src: url('font/font2.ttf') format('Truetype'), /* Specify the font file and its format (TrueType). */
       
 }
+/* Define another custom font using the @font-face rule. */
+
 
 @font-face {
-  font-family: 'font';
-  src: url('font/font.ttf') format('TrueType'),  
- 
-
+  font-family: 'font'; /* Set the font family name for font. */
+  src: url('font/font.ttf') format('TrueType'),  /* Specify the font file and its format (TrueType). */
 }
 
-/* typography stuff */
+/* Apply 'font2' as the default font for the entire HTML document with a 10px base font size. */
+
 
 html {
   font-family: 'font2';
   font-size: 10px;
 }
+/* Style h1 and h2 headings using 'font' font family and increase letter spacing. */
 
 h1, h2 {
   font-family: 'font';
   letter-spacing: 2px;
 }
-
+/* Style h1 with a larger font size and center-align the text. */
 h1 {
   font-size: 5rem;
   text-align: center;
 }
 
+/* Style h2 with a specific font size. */
 h2 {
   font-size: 3.2rem;
 }
+
+/* Indent paragraphs following an h2 element inside a section. */
 
 section h2 + p {
   text-indent: 20px;
 }
 
+/* Apply common styles to paragraphs and list items with specific font size, line height, letter spacing, and word spacing. */
 p, li {
   font-size: 1.6rem;
   line-height: 1.5;
@@ -103,25 +101,29 @@ p, li {
   word-spacing: 3px;
 }
 
-/* Link styling */
+/* Remove outline styles from all anchor elements. */
 
 a {
   outline: none;
 }
+/* Style hyperlinks with 'http' in their href attributes by adding a right padding and an external link icon. */
 
 a[href*="http"] {
   padding-right: 19px;
   background: url(external-link-52.png) no-repeat 100% 0;
   background-size: 16px 16px;
 }
+/* Style unvisited and visited hyperlinks with a specific color. */
 
 a:link, a:visited {
   color: #a66;
 }
+/* Remove text decoration on focused and hovered hyperlinks. */
 
 a:focus, a:hover {
   text-decoration: none;
 }
+/* Style active hyperlinks by making their text transparent and adding a text shadow. */
 
 a:active {
   color: transparent;
@@ -131,32 +133,37 @@ a:active {
                0px 0px 4px black;
 }
 
-/* lists: extra margin top and bottom to make it
-always have the same spacing as with paragraphs */
+/* Add extra margin to both unordered and ordered lists for consistent spacing with paragraphs. */
 
 ul, ol {
   margin: 1.6rem 0;
 }
-
+/* Style unordered lists with square list items. */
 ul {
   list-style-type: square;
 }
 
+/* Style ordered lists with lower-latin list items. */
 ol {
   list-style-type: lower-latin;
 }
 
-/* nav menu */
+/* Style the navigation menu. */
+
+/* Reset padding and set a margin-top for the navigation ul. */
+
 
 nav ul {
   padding-left: 0;
   margin-top: 0.8rem;
 }
-
+/* Remove list-style and add a margin to navigation list items. */
 nav li {
   list-style-type: none;
   margin-bottom: 2rem;
 }
+
+/* Style links within navigation list items. */
 
 nav li a {
   text-decoration: none;
@@ -168,11 +175,13 @@ nav li a {
   border: 1px solid #a66;
 }
 
+/* Style focused and hovered links within navigation list items. */
 nav li a:focus, nav li a:hover {
   color: white;
   background: #a66;
 }
 
+/* Style active links within navigation list items. */
 nav li a:active {
   color: white;
   background: black;
