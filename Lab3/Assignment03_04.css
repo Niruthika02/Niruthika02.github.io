@@ -1,95 +1,107 @@
+/* Define styles for the body element */
 body {
-    background-color: #fff;
-    color: #333;
-    margin: 0;
-    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+    background-color: #fff; /* Set background color to white */
+    color: #333; /* Set text color to dark gray */
+    margin: 0; /* Remove default margin */
+    font: 1.2em / 1.2 Arial, Helvetica, sans-serif; /* Set font properties */
   }
 
+  /* Define styles for images */
   img {
-      max-width: 100%;
-      display: block;
+      max-width: 100%; /* Ensure images don't exceed their container's width */
+      display: block; /* Remove default image inline alignment */
   }
   
+  /* Define styles for the .logo class */
   .logo {
-    font-size: 200%;
-    padding: 50px 20px;
-    margin: 0 auto;
-    max-width: 980px;
+    font-size: 200%; /* Increase font size for the logo */
+    padding: 50px 20px; /* Add padding around the logo */
+    margin: 0 auto; /* Center the logo horizontally on the page */
+    max-width: 980px; /* Set a maximum width for the logo container */
   }
   
+  /* Define styles for elements with the .grid class */
   .grid {
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 980px;
-    /*My Code*/
+    margin: 0 auto;  /* Center the content horizontally */
+    padding: 0 20px; /* Add padding to the content */
+    max-width: 980px; /* Set a maximum width for the content container */
+    /* My Code: Enable flex layout for the .grid container */
     display: flex;
   }
   
+  /* Define styles for the <nav> element */
   nav {
-    background-color: #000;
-    padding: .5em;
-    /*My code*/
+    background-color: #000; /* Set a background color for the navigation bar */
+    padding: .5em; /* Add padding to the navigation bar */
+     /* My Code: Stick the navigation bar to the top of the viewport */
     position: sticky;
     top: 0;
   }
   
+  /* Define styles for unordered lists within the <nav> element */
   nav ul {
     margin: 0;
     padding: 0;
-    list-style: none;
-    /*My Code*/
+    list-style: none; /* Remove bullet points from list items */
+    /* My Code: Enable flex layout for the list items */ 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Space items evenly along the horizontal axis */
+
   }
   
+  /* Define styles for anchor links within the navigation bar */
   nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: .5em 1em;
+    color: #fff; /* Set the text color to white */
+    text-decoration: none; /* Remove underlines from links */
+    padding: .5em 1em; /* Add padding to the links for clickable area */
   }
   
+  /* Define styles for elements with the .photos class */
   .photos {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    /*My Code*/
+    list-style: none; /* Remove list-style bullets */
+    margin: 0; /* Remove margin */
+    padding: 0;/* Remove padding */
+    /* My Code: Use grid layout for photos with 2 columns and 1px gap */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1px;
   }
 
+  /* Define styles for elements with the .feature class */
   .feature {
-      width: 200px;
-      float: left;
-      margin-right: 1em;
+      width: 200px; /* Set a fixed width for featured images */
+      float: left; /* Float the image to the left */
+      margin-right: 1em; /* Add right margin for spacing */
   }
 
-  /*Media Queries - stretch*/
+  /* Media Queries for screens with a maximum width of 600px */
   @media screen and (max-width: 600px) {
     nav {
-      position: static;
+      position: static; /* Reset navigation bar position to static */
     }
     nav ul {
-      flex-direction: column;
+      flex-direction: column; /* Change list items to a vertical layout */
     }
     nav ul li {
-      padding: .5em;
-      text-align: center;
+      padding: .5em; /* Add padding to list items */
+      text-align: center;  /* Center-align text within list items */
     }
     .grid {
-      flex-direction: column-reverse;
+      flex-direction: column-reverse; /* Change layout to column-reverse for .grid */
     }
     .photos {
-      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Responsive grid layout for photos */
+      gap: 10px; /* Add a gap between photos */
     }
     .feature {
-      float: none;
-      margin: 0 auto;
-      width: 100%;
+      float: none; /* Remove floating on featured images */
+      margin: 0 auto; /* Center-align featured images */
+      width: 100%; /* Set full width for featured images */
     }
+    } 
     article {
-      padding-top: 1em;
+      padding-top: 1em; /* Add top padding to the article */
+
     }
 
   }
