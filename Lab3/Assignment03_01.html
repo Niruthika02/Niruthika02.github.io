@@ -6,14 +6,16 @@
   It includes styling using CSS for various elements like headings, links, and lists.
 	-->
 
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Formatting a biography</title>
     <style>
+
+      /* Styling for the entire webpage body */
+
       body {
         background-color: #fff;
         color: #333;
@@ -22,66 +24,77 @@
         margin: 0;
       }
 
+      /* Styling for the main heading */
+
       h1 {
         color: hotpink;
-        font-size: 3em;
+        font-size: 3em; /* Increase font size for h1 */
         font-family: Georgia, 'Times New Roman', Times, serif;
         border-bottom: 10px dotted purple;
       }
+
+      /* Styling for secondary heading */
 
       h2 {
         font-size: 3em;
         font-style: italic;
       }
 
+      /* Styling for paragraphs */
+
       p {
-        font-size: 2em; /* Increase the font size for paragraphs to 1.5em */
+        font-size: 2em; /* Increase font size for paragraphs */
       }
+
+      /* Styling for the contact information box */
 
       ul {
         background-color: #eeeeee;
-        border: 10px solid purple;
+        border: 10px solid purple; /* Increase border width for ul */
         padding: 50px;
-        font-size: 2em; /* Increase the font size for text inside the "Contact information" box to 1.5em */
+        font-size: 2em; /* Increase font size for text inside the "Contact information" box */
       }
+
+      /* Styling for job title text */
 
       .job-title {
         color: #999999;
         font-weight: bold;
-        font-size: 2em; /* Increase the font size for the job title to 2em */
+        font-size: 2em; /* Increase font size for job title */
       }
+
+      /* Styling for links in their default and visited states */
 
       a:link,
       a:visited {
         color: #fb6542;
       }
 
+      /* Styling for links when hovered */
+      
       a:hover {
         text-decoration: none;
         color: green;
       }
 
+      /* Styling for email links within the "Contact information" box */
       ul a[href^="mailto:"]:link,
       ul a[href^="mailto:"]:visited {
-       color: green; /* Set the color for email links to green */
+        color: green; /* Set the color for email links to green */
       }
 
+      /* Styling for web links within the "Contact information" box */
       ul a[href^="http"]:link,
       ul a[href^="http"]:visited {
-       color: red; /* Set the color for web links to red */
+        color: red; /* Set the color for web links to red */
       }
     </style>
   </head>
-
   <body>
-
     <h1>Niruthika Sivaruban</h1>
     <div class="job-title">Web Developer</div>
     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-
-    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-    </p>
-
+    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
     <h2>Contact information</h2>
     <ul>
       <li>Email:
@@ -92,7 +105,7 @@
       </li>
       <li>Tel: 123 45678</li>
     </ul>
-
   </body>
-
 </html>
+
+  
