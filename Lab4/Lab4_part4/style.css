@@ -1,25 +1,38 @@
+/* Resetting default margin for html and body elements */
 html, body {
   margin: 0;
 }
 
+/* Setting the font family for the entire HTML document */
 html {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  height: 100%;
+  height: 100%; /* Ensuring the HTML element takes the full height of the viewport */
 }
 
+/* Styling for the body element */
 body {
-  overflow: hidden;
-  height: inherit;
+  overflow: hidden; /* Hiding any content that overflows the body */
+  height: inherit; /* Inheriting the height from the html element */
 }
 
+/* Styling for h1 element */
 h1 {
-  font-size: 2rem;
-  letter-spacing: -1px;
-  position: absolute;
-  margin: 0;
-  top: -4px;
-  right: 5px;
+  font-size: 2rem; /* Setting the font size for h1 */
+  letter-spacing: -1px; /* Adjusting letter spacing */
+  position: absolute; /* Positioning the h1 element absolutely within its containing element */
+  margin: 0; /* Resetting margin for h1 */
+  top: -4px; /* Adjusting top position */
+  right: 5px; /* Adjusting right position */
 
-  color: transparent;
-  text-shadow: 0 0 4px white;
+  color: transparent; /* Making text color transparent */
+  text-shadow: 0 0 4px white; /* Adding a white text shadow for a glowing effect */
+}
+
+/* Styling for p element */
+p {
+  position: absolute; /* Positioning the p element absolutely within its containing element */
+  margin: 0; /* Resetting margin for p */
+  top: 35px; /* Adjusting top position */
+  right: 5px; /* Adjusting right position */
+  color: #aaa; /* Setting text color for p element */
 }
