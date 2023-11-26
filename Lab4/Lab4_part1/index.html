@@ -1,84 +1,87 @@
+<!--
+	Name: Niruthika Sivaruban
+	File: index.html
+	Date: 23 Novvember 2023
+	This HTML file serves as a "Silly Story Generator" web page. Users can input a custom name, choose between "US" and "UK" settings, and generate entertaining random stories. 
+	-->
+
+  
 <!DOCTYPE html>
-<!-- The above line declares the document type and version of HTML being used -->
-
 <html lang="en-us">
-  <!-- The opening tag for the HTML document with the language attribute set to English (United States) -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <!-- Viewport configuration for responsive design -->
 
-  <head>
-    <!-- The head section of the HTML document, which contains meta-information about the document -->
+  <title>Silly story generator</title>
+  <!-- The title of the HTML document displayed in the browser tab -->
 
-    <meta charset="utf-8" />
-    <!-- Character set declaration for the document -->
+  <style>
+    /* Internal CSS styles for styling the HTML elements */
+    body 
+    {
+      font-family: helvetica, sans-serif;
+      width: 350px;
+    }
 
-    <meta name="viewport" content="width=device-width" />
-    <!-- Viewport configuration for responsive design -->
+    label 
+    {
+      font-weight: bold;
+    }
 
-    <title>Silly story generator</title>
-    <!-- The title of the HTML document displayed in the browser tab -->
+    div 
+    {
+      padding-bottom: 20px;
+    }
 
-    <style>
-      /* Internal CSS styles for styling the HTML elements */
-      body {
-        font-family: helvetica, sans-serif;
-        width: 350px;
-      }
+    input[type="text"] 
+    {
+      padding: 5px;
+      width: 150px;
+    }
 
-      label {
-        font-weight: bold;
-      }
+    p 
+    {
+      background: #ffc125;
+      color: #5e2612;
+      padding: 10px;
+      visibility: hidden;
+    }
+  </style>
+</head>
 
-      div {
-        padding-bottom: 20px;
-      }
+<body>
+  <!-- The body section of the HTML document, where the content is placed -->
 
-      input[type="text"] {
-        padding: 5px;
-        width: 150px;
-      }
+  <div>
+    <!-- A container div for input elements -->
+    <label for="customname">Enter custom name:</label>
+    <!-- Label for the input field with the id "customname" -->
 
-      p {
-        background: #ffc125;
-        color: #5e2612;
-        padding: 10px;
-        visibility: hidden;
-      }
-    </style>
-  </head>
+    <input id="customname" type="text" placeholder="" />
+    <!-- Input field with the id "customname" of type text and an empty placeholder -->
 
-  <body>
-    <!-- The body section of the HTML document, where the content is placed -->
+  </div>
+  <div>
+    <!-- Another container div for radio buttons -->
+    <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked />
+    <!-- Label and radio button for US -->
 
-    <div>
-      <!-- A container div for input elements -->
-      <label for="customname">Enter custom name:</label>
-      <!-- Label for the input field with the id "customname" -->
+    <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk" />
+    <!-- Label and radio button for UK -->
 
-      <input id="customname" type="text" placeholder="" />
-      <!-- Input field with the id "customname" of type text and an empty placeholder -->
+  </div>
+  <div>
+    <!-- Container div for the "Generate random story" button -->
+    <button class="randomize">Generate random story</button>
+    <!-- Button with the class "randomize" -->
 
-    </div>
-    <div>
-      <!-- Another container div for radio buttons -->
-      <label for="us">US</label
-      ><input id="us" type="radio" name="ukus" value="us" checked />
-      <!-- Label and radio button for US -->
+  </div>
+  <!-- A comment expressing gratitude to someone for their help with the code -->
 
-      <label for="uk">UK</label
-      ><input id="uk" type="radio" name="ukus" value="uk" />
-      <!-- Label and radio button for UK -->
+  <p class="story"></p>
+  <!-- Paragraph element with the class "story" to display the generated story -->
 
-    </div>
-    <div>
-      <!-- Container div for the "Generate random story" button -->
-      <button class="randomize">Generate random story</button>
-      <!-- Button with the class "randomize" -->
+</body>
 
-    </div>
-    <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
-    <!-- A comment expressing gratitude to someone for their help with the code -->
-
-    <p class="story"></p>
-    <!-- Paragraph element with the class "story" to display the generated story -->
-
-  </body>
 </html>
