@@ -1,5 +1,3 @@
-// Thanks to Renan Martineli for this version of the demo
-
 // setup canvas
 
 const para = document.querySelector('p');
