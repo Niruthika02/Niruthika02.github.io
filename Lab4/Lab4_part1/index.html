@@ -1,12 +1,23 @@
 <!DOCTYPE html>
+<!-- The above line declares the document type and version of HTML being used -->
+
 <html lang="en-us">
+  <!-- The opening tag for the HTML document with the language attribute set to English (United States) -->
+
   <head>
+    <!-- The head section of the HTML document, which contains meta-information about the document -->
+
     <meta charset="utf-8" />
+    <!-- Character set declaration for the document -->
+
     <meta name="viewport" content="width=device-width" />
+    <!-- Viewport configuration for responsive design -->
 
     <title>Silly story generator</title>
+    <!-- The title of the HTML document displayed in the browser tab -->
 
     <style>
+      /* Internal CSS styles for styling the HTML elements */
       body {
         font-family: helvetica, sans-serif;
         width: 350px;
@@ -35,20 +46,39 @@
   </head>
 
   <body>
+    <!-- The body section of the HTML document, where the content is placed -->
+
     <div>
+      <!-- A container div for input elements -->
       <label for="customname">Enter custom name:</label>
+      <!-- Label for the input field with the id "customname" -->
+
       <input id="customname" type="text" placeholder="" />
+      <!-- Input field with the id "customname" of type text and an empty placeholder -->
+
     </div>
     <div>
+      <!-- Another container div for radio buttons -->
       <label for="us">US</label
       ><input id="us" type="radio" name="ukus" value="us" checked />
+      <!-- Label and radio button for US -->
+
       <label for="uk">UK</label
       ><input id="uk" type="radio" name="ukus" value="uk" />
+      <!-- Label and radio button for UK -->
+
     </div>
     <div>
+      <!-- Container div for the "Generate random story" button -->
       <button class="randomize">Generate random story</button>
+      <!-- Button with the class "randomize" -->
+
     </div>
     <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+    <!-- A comment expressing gratitude to someone for their help with the code -->
+
     <p class="story"></p>
+    <!-- Paragraph element with the class "story" to display the generated story -->
+
   </body>
 </html>
