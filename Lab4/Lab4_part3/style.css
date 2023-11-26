@@ -21,6 +21,8 @@ h1 {
     letter-spacing: -1px; /* Adjusting letter spacing */
     position: absolute; /* Positioning the h1 element absolutely within its containing element */
     margin: 0; /* Resetting margin for h1 */
+    top: -4px;
+    right: 5px;
 
     /* Styling for text color and shadow */
     color: transparent; /* Making text color transparent */
