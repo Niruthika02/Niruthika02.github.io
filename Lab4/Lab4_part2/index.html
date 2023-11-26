@@ -1,27 +1,47 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
+<!--
+	Name: Niruthika Sivaruban
+	File: index.html
+	Date: 23 Novvember 2023
+	This HTML document represents a simple image gallery example. It includes a main image display with an overlay and a "Darken" button for interaction. The webpage is styled using an external stylesheet named "style.css," and dynamic functionality is provided by an external JavaScript file named "main.js."
+    The purpose of the page is to showcase an illustrative image and potentially offer additional functionality for viewing a collection of images.
+	-->
 
-    <title>Image gallery</title>
-
-    <link rel="stylesheet" href="style.css">
+    <!DOCTYPE html>
+    <html lang="en-us">  
+      <head>  
+        <meta charset="utf-8">  
+        <title>Image gallery</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Link to an external stylesheet named "style.css" for styling the HTML document -->
     
-  </head>
-
-  <body>
-    <h1>Image gallery example</h1>
-
-    <div class="full-img">
-      <img class="displayed-img" src="images/pic1.jpg" alt="Closeup of a human eye">
-      <div class="overlay"></div>
-      <button class="dark">Darken</button>
-    </div>
-
-    <div class="thumb-bar">
-
-
-    </div>
-    <script src="main.js"></script>
-  </body>
-</html>
+      </head>
+    
+      <body>
+        <!-- The body section of the HTML document, where the content is placed -->
+    
+        <h1>Image gallery example</h1>
+        <!-- Heading indicating the purpose of the webpage -->
+    
+        <div class="full-img">
+          <!-- Container div for the main image display -->
+          <img class="displayed-img" src="images/pic1.jpg" alt="Closeup of a human eye">
+          <!-- The main image with the class "displayed-img" and alt text describing the image -->
+          <div class="overlay"></div>
+          <!-- Overlay div for additional effects or features -->
+          <button class="dark">Darken</button>
+          <!-- Button with the class "dark" for interacting with the displayed image -->
+    
+        </div>
+    
+        <div class="thumb-bar">
+          <!-- Container div for thumbnail images -->
+          <!-- (No content within the thumb-bar div in the provided code) -->
+    
+        </div>
+    
+        <script src="main.js"></script>
+        <!-- Script tag linking to an external JavaScript file named "main.js" for dynamic functionality -->
+    
+      </body>
+    </html>
+    
