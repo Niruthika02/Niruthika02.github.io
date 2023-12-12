@@ -1,4 +1,3 @@
-
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
