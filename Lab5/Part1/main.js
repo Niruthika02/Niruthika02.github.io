@@ -1,4 +1,4 @@
-// functionality for showing/hiding the comments section
+// Functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
 const commentWrapper = document.querySelector('.comment-wrapper');
@@ -16,7 +16,7 @@ showHideBtn.onclick = function() {
   }
 };
 
-// functionality for adding a new comment via the comments form
+// Functionality for adding a new comment via the comments form
 
 const form = document.querySelector('.comment-form');
 const nameField = document.querySelector('#name');
